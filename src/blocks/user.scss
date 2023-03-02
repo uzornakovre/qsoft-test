@@ -1,0 +1,30 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 150px;
+  min-height: 80px;
+  padding-left: 19px;
+  border-left: 1px solid #EBEBF1;
+  cursor: pointer;
+
+  &:hover &__name {
+    opacity: .7;
+  }
+
+  &__name {
+    width: 90px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #768298;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &_avatar {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}

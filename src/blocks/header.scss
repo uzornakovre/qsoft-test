@@ -1,5 +1,26 @@
 .header {
-  display: flex;
   min-height: 80px;
-  background-color: #FFF;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+
+  &__content {
+    min-height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    max-width: 1240px;
+    min-width: 375px;
+    
+    margin: 0 auto;
+  }
+
+  &__logo-link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+  }
+
+  &__user-info {
+    display: none;
+  }
 }
