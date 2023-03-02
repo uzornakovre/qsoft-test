@@ -10,17 +10,31 @@
     gap: 60px;
     max-width: 1240px;
     min-width: 375px;
-    
     margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      gap: 0;
+    }
   }
 
   &__logo-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    height: 80px;
     text-decoration: none;
     color: #000;
+
+    @media screen and (max-width: 1279px) {
+      padding-left: 20px;
+    }
   }
 
   &__user-info {
     display: none;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
   }
 }

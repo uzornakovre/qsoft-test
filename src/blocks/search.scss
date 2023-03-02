@@ -3,9 +3,14 @@
   display: flex;
   align-items: center;
   width: 100%;
+  min-width: 200px;
   max-width: 833px;
-  min-height: 80px;
+  height: 80px;
   margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    height: 40px;
+  }
 
   &__input {
     box-sizing: border-box;
@@ -26,6 +31,11 @@
     &:focus {
       outline: none;
       background-color: rgba(0, 0, 0, 0.02);
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 40px;
+      border: none;
     }
   }
 

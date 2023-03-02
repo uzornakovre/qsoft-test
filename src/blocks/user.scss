@@ -12,6 +12,14 @@
     opacity: .7;
   }
 
+  @media screen and (max-width: 1279px) {
+    padding-right: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &__name {
     width: 90px;
     font-size: 14px;
