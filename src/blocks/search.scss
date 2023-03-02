@@ -19,6 +19,7 @@
     border: 1px solid #EBEBF1;
     border-radius: 5px;
     padding-left: 40px;
+    transition: all .2s linear;
 
     &::placeholder {
       color: #BBC4D6;
@@ -57,13 +58,14 @@
     transform: translateY(-50%);
     border: none;
     cursor: pointer;
+    transition: all .2s linear;
 
     &:hover {
-      transform: scale(1.1);
+      transform: translateY(-50%) scale(1.1);
     }
 
     &:active {
-      transform: scale(1.13);
+      transform: translateY(-50%) scale(1.13);
     }
 
     @media screen and (max-width: 767px) {

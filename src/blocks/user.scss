@@ -7,6 +7,7 @@
   padding-left: 19px;
   border-left: 1px solid #EBEBF1;
   cursor: pointer;
+  transition: opacity .2s linear;
 
   &:hover &__name {
     opacity: .7;
