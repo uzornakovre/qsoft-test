@@ -1,8 +1,79 @@
 .partners {
+  max-width: 100%;
   margin: 55px auto;
 
+  @media screen and (max-width: 1279px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   &__title {
+    width: 80%;
     margin: 15px 0;
     text-transform: uppercase;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.6;
+    color: #121920;
   }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+
+    @media screen and (max-width: 1279px) {
+      gap: 20px;
+    }
+  }
+
+  &__list-item {
+    height: 120px;
+    flex-basis: 23%;
+    flex-shrink: 23%;
+    flex-grow: 100%;
+    border: 1px solid #EBEBF1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &:hover {
+      box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+    }
+
+    &:active {
+      opacity: .5;
+    }
+
+    @media screen and (max-width: 900px) {
+      flex-basis: 31%;
+    }
+
+    @media screen and (max-width: 698px) {
+      flex-basis: 47%;
+      height: 140px;
+    }
+
+    @media screen and (max-width: 440px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__logo {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+  }
+
 }
